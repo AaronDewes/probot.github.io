@@ -7,14 +7,14 @@ layout: default
     <div class="d-md-flex d-md-flex-row gutter-md-spacious">
       <div class="col-md-9">
         <h1 class="alt-h1 lh-condensed-ultra">{{ page.title }}</h1>
-        <div class="text-gray-light">{{ page.description }}</div>
+        <div class="color-text-tertiary">{{ page.description }}</div>
       </div>
       <div class="col-md-3 text-center">
         <a class="mt-md-1 mb-2 d-block btn btn-primary btn-large" href="https://github.com/apps/{{ page.slug }}/installations/new" data-proofer-ignore ga-on="click" ga-event-category="App Install">
           {% octicon plus class:"mr-2" %}
           Add to GitHub
         </a>
-        <div class="text-gray-light">
+        <div class="color-text-tertiary">
           {% if page.installations %}
           <div class="mr-2 d-inline tooltipped tooltipped-s" aria-label="{{ page.installations }} installations">{% octicon download heigh:16 class:"v-align-middle" %} <span class="">{{ page.installations }}</span></div>
           {% endif %}
@@ -25,11 +25,11 @@ layout: default
   </div>
 </div>
 
-<div class="bg-gray-dark text-white">
+<div class="color-bg-tertiary-dark text-white">
   <div class="container-lg px-3 py-6">
     <div class="d-md-flex gutter-md-spacious">
       <div class="col-md-9">
-        <div class="sixteen-by-nine rounded-1 bg-white overflow-hidden">
+        <div class="sixteen-by-nine rounded-1 color-bg-primary overflow-hidden">
           {% for screenshot in page.screenshots %}
             <input class="switcher-input" id="screenshot-{{ forloop.index }}" type="radio" name="switcher"{% if forloop.index == 1 %} checked{% endif %}>
             <div class="switcher-item content d-flex flex-items-center flex-justify-center p-3">
@@ -47,24 +47,24 @@ layout: default
         {% endif %}
       </div>
       <div class="col-md-3">
-        <h4 class="mb-1 alt-h4 text-gray">Repository</h4>
+        <h4 class="mb-1 alt-h4 color-text-secondary">Repository</h4>
         <p>
           <a class="text-inherit" href="https://github.com/{{ page.repository }}">{{ page.repository }}</a>
         </p>
-        <h4 class="mb-1 alt-h4 text-gray">Authors</h4>
+        <h4 class="mb-1 alt-h4 color-text-secondary">Authors</h4>
         {% for author in page.authors %}
           <p>
             <a class="text-inherit" href="https://github.com/{{ author }}">{{ author }}</a>
           </p>
         {% endfor %}
-        <h4 class="mb-1 alt-h4 text-gray">Updated</h4>
+        <h4 class="mb-1 alt-h4 color-text-secondary">Updated</h4>
         <p><span class="text-white">{{ page.updated | date: "%B %e, %Y"}}</p>
 
         {% if page.organizations %}
-          <h4 class="mb-1 alt-h4 text-gray">Used By</h4>
+          <h4 class="mb-1 alt-h4 color-text-secondary">Used By</h4>
           {% for org in page.organizations %}
             <a href="https://github.com/{{ org }}" aria-label="{{ org }}" class="tooltipped tooltipped-n avatar-group-item">
-              <img class="avatar bg-white" src="https://github.com/{{ org }}.png" alt="{{ org }}" width="35" height="35">
+              <img class="avatar color-bg-primary" src="https://github.com/{{ org }}.png" alt="{{ org }}" width="35" height="35">
             </a>
           {% endfor %}
         {% endif %}

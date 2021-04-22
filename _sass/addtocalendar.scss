@@ -116,7 +116,7 @@
 
 .atc-style-blue .atcb-item.hover,
 .atc-style-blue .atcb-item:hover {
-    background: $text-blue;
+    background: var(--color-text-link);
 }
 
 // Override the addtocalendar.com button font

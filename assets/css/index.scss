@@ -1,7 +1,7 @@
 ---
 ---
 
-@import "primer-css/index.scss";
+@import "@primer/css/index.scss";
 @import "pages/home.scss";
 @import "colors.scss";
 @import "markdown.scss";
@@ -43,7 +43,6 @@ body {
 }
 
 #toc .toc-wrap {
-  position: -webkit-sticky;
   position: sticky;
   top: 40px;
 }

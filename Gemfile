@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 require 'json'
 require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read) rescue ">0"
+versions = JSON.parse(URI.open('https://pages.github.com/versions.json').read) rescue ">0"
 
 group :jekyll_plugins do
   gem 'jekyll-redirect-from'
@@ -21,6 +21,4 @@ group :test do
   gem 'html-proofer'
 end
 
-gem 'rb-fsevent', '0.9.8' # See issue https://github.com/guard/listen/issues/431
-
-# Added at 2017-10-23 15:14:34 -0400 by jasonetcovitch:
+gem 'rb-fsevent', '0.10.4'

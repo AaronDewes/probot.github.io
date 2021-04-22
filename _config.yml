@@ -48,3 +48,5 @@ plugins:
   - jemoji
 
 branch: master
+
+encoding: utf-8

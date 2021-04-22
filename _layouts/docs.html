@@ -17,7 +17,7 @@ layout: default
         {% endif %}
       {% endfor %}
 
-      <div class="d-flex border-bottom border-gray-light mt-6 mb-3 py-3 text-gray-light">
+      <div class="d-flex border-bottom border-gray-light mt-6 mb-3 py-3 color-text-tertiary">
         <div class="col-6">
           {% if previous %}
             {% octicon chevron-left class:"v-align-text-bottom" %}
@@ -32,7 +32,7 @@ layout: default
         </div>
       </div>
 
-      <p class="alt-text-small text-gray-light">
+      <p class="alt-text-small color-text-tertiary">
         Found a mistake or want to help improve this documentation?
         <a href="https://github.com/probot/probot/edit/{{ site.branch }}/{{ page.path }}">Suggest changes on GitHub</a>
       </p>
@@ -59,7 +59,7 @@ layout: default
                 {% if page.url == link.url %}
                   {% assign classes = "text-brand-red" %}
                 {% else %}
-                  {% assign classes = "text-gray-light" %}
+                  {% assign classes = "color-text-tertiary" %}
                 {% endif %}
 
                 <a class="d-block no-underline py-1 {{classes}}" href="{{ link.url }}">{{ link.title }}</a>
@@ -76,7 +76,7 @@ layout: default
 <script type="text/javascript">
   anchors.options = {
     placement: 'left',
-    class: 'text-gray no-underline'
+    class: 'color-text-secondary no-underline'
   };
 
   anchors.add();
