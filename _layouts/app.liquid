@@ -11,14 +11,14 @@ layout: default
       </div>
       <div class="col-md-3 text-center">
         <a class="mt-md-1 mb-2 d-block btn btn-primary btn-large" href="https://github.com/apps/{{ page.slug }}/installations/new" data-proofer-ignore ga-on="click" ga-event-category="App Install">
-          {% octicon plus class:"mr-2" %}
+          {% octicon "plus" class:"mr-2" %}
           Add to GitHub
         </a>
         <div class="color-text-tertiary">
           {% if page.installations %}
-          <div class="mr-2 d-inline tooltipped tooltipped-s" aria-label="{{ page.installations }} installations">{% octicon download heigh:16 class:"v-align-middle" %} <span class="">{{ page.installations }}</span></div>
+          <div class="mr-2 d-inline tooltipped tooltipped-s" aria-label="{{ page.installations }} installations">{% octicon "download" height=16 class="v-align-middle" %} <span class="">{{ page.installations }}</span></div>
           {% endif %}
-          <div class="d-inline tooltipped tooltipped-s" aria-label="{{ page.stars }} stars">{% octicon star heigh:16 class:"v-align-middle" %} <span class="">{{ page.stars }}</span></div>
+          <div class="d-inline tooltipped tooltipped-s" aria-label="{{ page.stars }} stars">{% octicon "star" height=16 class="v-align-middle" %} <span class="">{{ page.stars }}</span></div>
         </div>
       </div>
     </div>

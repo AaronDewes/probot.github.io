@@ -1,7 +1,21 @@
 {
   "private": true,
-  "dependencies": {
-    "@primer/css": "^16.3.0"
+  "scripts": {
+    "format": "prettier --write '**/*.js' '**/*.scss' '**/*.html'",
+    "sass": "node script/sass.js",
+    "watch": "eleventy --serve",
+    "build": "eleventy --input=. --output=_site"
   },
-  "repository": "github:probot/probot.github.io"
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "@primer/css": "^16.3.0",
+    "@primer/octicons": "^13.0.0",
+    "liquidjs": "^9.23.4",
+    "sass": "^1.32.11"
+  },
+  "repository": "github:probot/probot.github.io",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }

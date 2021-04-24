@@ -1,12 +1,10 @@
----
----
-
-@import "@primer/css/index.scss";
+@import "vendor.scss";
 @import "pages/home.scss";
 @import "colors.scss";
 @import "markdown.scss";
 @import "switcher.scss";
 @import "addtocalendar.scss";
+@import "syntax.scss";
 
 img {
   max-width: 100%;

@@ -10,13 +10,13 @@ title: Featured Apps
     <div class="d-md-flex flex-wrap gutter flex-auto">
       {% assign apps = site.apps | sort: 'installations' | reverse %}
       {% for app in apps %}
-        {% include app.html app=app %}
+        {% include "app" app: app %}
       {% endfor %}
 
       <div class="col-lg-4 col-md-6 mb-3 mt-3 d-flex flex-column">
         <a href="https://github.com/probot/probot.github.io/blob/master/CONTRIBUTING.md#adding-your-app" class="d-flex flex-column flex-1 rounded-1 border border-dashed border-gray-dark link-gray no-underline">
           <h3 class="h4 px-3 pt-3">
-            {% octicon plus class:"v-align-text-bottom" %}
+            {% octicon "plus" class="v-align-text-bottom" %}
             Share your app
           </h3>
           <p class="lh-condensed px-3 pb-3">Is your app ready for prime time? Submit it to the app directory.</p>

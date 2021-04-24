@@ -43,7 +43,7 @@ layout: default
 
     <div class="d-md-flex flex-wrap gutter flex-auto">
       {% assign apps = site.apps | sort: 'installations' | reverse %} {% for app
-      in apps limit:6 %} {% include app.html app=app %} {% endfor %}
+      in apps limit:6 %} {% include "app" app: app %} {% endfor %}
     </div>
 
     <div class="text-center my-6">
@@ -51,7 +51,7 @@ layout: default
         Discover dozens of apps that extend GitHub and improve your workflow.
       </p>
       <a class="btn btn-outline btn-large" href="/apps/">
-        {% octicon telescope class:"mr-2" %} Explore more apps
+        {% octicon "telescope" class="mr-2" %} Explore more apps
       </a>
     </div>
   </div>
@@ -63,7 +63,7 @@ layout: default
     <p class="alt-lead text-center mb-6">Apps are easy to write and share.</p>
     <p class="text-center mb-6">
       <a class="btn btn-outline btn-large" href="/docs/">
-        {% octicon tools class:"mr-2" %} Build a Probot App
+        <i class="m-2">{% octicon "tools" %}</i> Build a Probot App
       </a>
     </p>
 
@@ -137,7 +137,7 @@ module.exports = (app) => {
           <p>Apps are first class actors within GitHub.</p>
           <p class="mt-3">
             <a href="/docs/"
-              >Get started with Probot {% octicon chevron-right %}</a
+              >Get started with Probot {% octicon "chevron-right" %}</a
             >
           </p>
         </div>

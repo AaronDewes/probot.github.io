@@ -153,7 +153,7 @@ This codespaces comes and configured installed with:
 ### Setup locally
 This app depends on NodeJS to run the application and MongoDB for data persistence. Follow the following steps to run this app locally:
 
-```sh
+```bash
 # Install dependencies
 npm install
 ```
@@ -161,7 +161,7 @@ npm install
 Then, copy `.env.example` to `.env` and populate it with your MongoDB host and credentials and your proxy url. Make sure to run a tool like [ngrok](https://ngrok.com/) or [localtunnel](https://github.com/localtunnel/localtunnel) to expose your application to the internet. Smee.io is not supported, as it is a webhook proxy service and cannot forward Express endpoint calls
 
 Now you can run the app with the following command:
-```sh
+```bash
 npm run build:watch
 ```
 

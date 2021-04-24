@@ -65,7 +65,7 @@ If you don't want to change anything, you can skip creating this file.
 
 This is needed if you want to deploy this bot to your server or want to contribute to it. Please note, that `tests-checker` is ready to use. You just need to install Github Application as mentioned in above.
 
-```sh
+```bash
 # Install dependencies
 npm install
 
